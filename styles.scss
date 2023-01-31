@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial,sans-serif;
 }
 
 .global-container {
@@ -8,9 +9,16 @@
   max-width: 90%;
 }
 
+.content-container {
+  width: 40%;
+  margin: auto;
+  padding: 1em;
+}
+
 .header {
   padding: 1em;
   background-color: black;
+
 
   &__container {
     display: flex;
@@ -43,26 +51,235 @@
     background-color: black;
     cursor: pointer;
     font-size: 1.3em;
-  }
-
-  &__item:hover {
-    font-size: 1.5em;
-    background-color: rgba(0, 255, 255, 0.14);
     border-radius: .5em;
-    color: aqua;
+    transition: background-color 200ms ease-out 100ms;
+    &:hover {
+      background-color: rgba(0, 255, 255, 0.14);
+      border-radius: .5em;
+      color: aqua;
+    }
   }
 }
 
 .card {
+  background-color: #353535;
+  border-top: .1em solid aqua;
+  margin: auto;
+  padding: 1em 0;
 
 
+  &__container {
+    box-shadow: .1em .1em 1em rgba(0, 255, 255, 0.22);
+    border-radius: 1em;
+    margin: 3em auto;
+    border: .1em solid aqua;
+    background-color: #3d4141;
+  }
 
-  &__detail {
-    background-color: gray;
+  &__title {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    color: aqua;
+    justify-content: center;
+    font-size: 2em;
+    margin: .5em 0;
+    text-shadow: .3em .3em rgba(0, 121, 121, 0.15);
+    font-weight: bold;
+  }
+
+  &__detail {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto auto;
+    padding: 1em;
+    width: 95%;
+  }
+
+  &__input-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+  }
+
+  &__label {
+    width: 85%;
+  }
+
+  &__input {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    padding: .3em .7em;
+    border-radius: .5em;
+    border: .1em solid aqua;
+    font-size: 1.2em;
+    background-color: #353535;
+    color: aqua;
+    &:focus {
+      background-color: #272727;
+      display: flex;
+      flex-wrap: wrap;
+      padding: .3em .7em;
+      outline: none;
+      border: .1em solid aqua;
+    }
   }
 
 
+
+  &__submit {
+    background-color: #353535;
+    color: aqua;
+    border: .1em solid aqua;
+    padding: .3em .7em;
+    cursor: pointer;
+    border-radius: .5em;
+    font-size: 1.2em;
+    transition: background-color 200ms ease-out 100ms;
+    &:hover {
+      background-color: aqua;
+      color: #353535;
+      border: .1em solid aqua;
+      padding: .3em .7em;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: #353535;
+      color: aqua;
+      border: .1em solid aqua;
+      padding: .3em .7em;
+      cursor: pointer;
+      border-radius: .5em;
+      font-size: 1.2em;
+    }
+  }
+
+  &__cancel {
+    display: none;
+    background-color: gray;
+    color: aqua;
+    border: .1em solid aqua;
+    padding: .3em .7em;
+    cursor: pointer;
+    border-radius: .5em;
+    font-size: 1.2em;
+    &:hover {
+      background-color: aqua;
+      color: #353535;
+      border: .1em solid aqua;
+      padding: .3em .7em;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: gray;
+      color: aqua;
+      border: .1em solid aqua;
+      padding: .3em .7em;
+      cursor: pointer;
+      border-radius: .5em;
+      font-size: 1.2em;
+    }
+  }
+
+  &__list-container {
+    padding: 1em;
+    width: 95%;
+  }
+
+  &__list {
+
+  }
+
+  &__items {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-bottom: .1em solid white ;
+    padding: 1em 0;
+  }
+
+  &__item-text {
+    color: #a0ffff;
+  }
+
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 15%;
+  }
+
+  &__edit {
+    cursor: pointer;
+    color: white;
+    border: .1em solid aqua;
+    border-radius: .5em;
+    padding: .1em;
+    &:hover {
+      border: .1em solid #3d4141;
+      color: aqua;
+    }
+  }
+
+  &__done {
+    cursor: pointer;
+    color: white;
+    border: .1em solid aqua;
+    border-radius: .5em;
+    padding: .1em;
+    &:hover {
+      border: .1em solid #3d4141;
+      color: aqua;
+    }
+  }
+
+  &__delete {
+    cursor: pointer;
+    color: white;
+    border: .1em solid aqua;
+    border-radius: .5em;
+    padding: .1em;
+    &:hover {
+      border: .1em solid #3d4141;
+      color: aqua;
+    }
+  }
+
+  &__clear-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  &__clear {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .3em 1.5em;
+    font-size: 1em;
+    background-color: #353535;
+    color: aqua;
+    border: .1em solid aqua;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: background-color 200ms ease-out 100ms;
+    &:hover {
+      background-color: aqua;
+      color: #353535;
+      border: .1em solid aqua;
+    }
+    &:active {
+      background-color: #353535;
+      color: aqua;
+      border: .1em solid aqua;
+      border-radius: .5em;
+    }
+  }
+
 }
+
