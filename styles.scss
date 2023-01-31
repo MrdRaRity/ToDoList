@@ -4,6 +4,10 @@
   font-family: Arial,sans-serif;
 }
 
+body {
+  background-color: #353535;
+}
+
 .global-container {
   margin: 0 auto;
   max-width: 90%;
@@ -76,15 +80,27 @@
     background-color: #3d4141;
   }
 
-  &__title {
+  &__title-container {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em 0;
+  }
+
+  &__title {
+    display: inline-flex;
     flex-wrap: wrap;
     color: aqua;
     justify-content: center;
     font-size: 2em;
     margin: .5em 0;
-    text-shadow: .3em .3em rgba(0, 121, 121, 0.15);
+    text-shadow: .2em .2em .2em rgba(0, 121, 121, 0.64);
     font-weight: bold;
+    border: .05em solid aqua;
+    padding: .3em .7em;
+    border-radius: .5em;
+    box-shadow: .1em .1em .3em rgba(0, 255, 255, 0.22);
   }
 
   &__detail {
@@ -115,7 +131,7 @@
     border: .1em solid aqua;
     font-size: 1.2em;
     background-color: #353535;
-    color: aqua;
+    color: #c2ffff;
     &:focus {
       background-color: #272727;
       display: flex;
@@ -124,11 +140,15 @@
       outline: none;
       border: .1em solid aqua;
     }
+    &::placeholder {
+      color: #c2ffff;
+    }
   }
 
 
 
   &__submit {
+    display: none;
     background-color: #353535;
     color: aqua;
     border: .1em solid aqua;
@@ -156,14 +176,14 @@
   }
 
   &__cancel {
-    display: none;
-    background-color: gray;
+    background-color: #353535;
     color: aqua;
     border: .1em solid aqua;
     padding: .3em .7em;
     cursor: pointer;
     border-radius: .5em;
     font-size: 1.2em;
+    transition: background-color 200ms ease-out 100ms;
     &:hover {
       background-color: aqua;
       color: #353535;
@@ -215,7 +235,7 @@
 
   &__edit {
     cursor: pointer;
-    color: white;
+    color: #c2ffff;
     border: .1em solid aqua;
     border-radius: .5em;
     padding: .1em;
@@ -227,7 +247,7 @@
 
   &__done {
     cursor: pointer;
-    color: white;
+    color: #c2ffff;
     border: .1em solid aqua;
     border-radius: .5em;
     padding: .1em;
@@ -239,7 +259,7 @@
 
   &__delete {
     cursor: pointer;
-    color: white;
+    color: #c2ffff;
     border: .1em solid aqua;
     border-radius: .5em;
     padding: .1em;

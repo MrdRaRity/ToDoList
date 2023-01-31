@@ -4,6 +4,10 @@
   font-family: Arial, sans-serif;
 }
 
+body {
+  background-color: #353535;
+}
+
 .global-container {
   margin: 0 auto;
   max-width: 90%;
@@ -65,15 +69,26 @@
   border: 0.1em solid aqua;
   background-color: #3d4141;
 }
-.card__title {
+.card__title-container {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em 0;
+}
+.card__title {
+  display: inline-flex;
   flex-wrap: wrap;
   color: aqua;
   justify-content: center;
   font-size: 2em;
   margin: 0.5em 0;
-  text-shadow: 0.3em 0.3em rgba(0, 121, 121, 0.15);
+  text-shadow: 0.2em 0.2em 0.2em rgba(0, 121, 121, 0.64);
   font-weight: bold;
+  border: 0.05em solid aqua;
+  padding: 0.3em 0.7em;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 0.3em rgba(0, 255, 255, 0.22);
 }
 .card__detail {
   display: flex;
@@ -100,7 +115,7 @@
   border: 0.1em solid aqua;
   font-size: 1.2em;
   background-color: #353535;
-  color: aqua;
+  color: #c2ffff;
 }
 .card__input:focus {
   background-color: #272727;
@@ -110,7 +125,11 @@
   outline: none;
   border: 0.1em solid aqua;
 }
+.card__input::placeholder {
+  color: #c2ffff;
+}
 .card__submit {
+  display: none;
   background-color: #353535;
   color: aqua;
   border: 0.1em solid aqua;
@@ -137,14 +156,14 @@
   font-size: 1.2em;
 }
 .card__cancel {
-  display: none;
-  background-color: gray;
+  background-color: #353535;
   color: aqua;
   border: 0.1em solid aqua;
   padding: 0.3em 0.7em;
   cursor: pointer;
   border-radius: 0.5em;
   font-size: 1.2em;
+  transition: background-color 200ms ease-out 100ms;
 }
 .card__cancel:hover {
   background-color: aqua;
@@ -187,7 +206,7 @@
 }
 .card__edit {
   cursor: pointer;
-  color: white;
+  color: #c2ffff;
   border: 0.1em solid aqua;
   border-radius: 0.5em;
   padding: 0.1em;
@@ -198,7 +217,7 @@
 }
 .card__done {
   cursor: pointer;
-  color: white;
+  color: #c2ffff;
   border: 0.1em solid aqua;
   border-radius: 0.5em;
   padding: 0.1em;
@@ -209,7 +228,7 @@
 }
 .card__delete {
   cursor: pointer;
-  color: white;
+  color: #c2ffff;
   border: 0.1em solid aqua;
   border-radius: 0.5em;
   padding: 0.1em;
