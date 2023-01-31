@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.global-container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.content-container {
+  width: 40%;
+  margin: auto;
+  padding: 1em;
+}
+
+.header {
+  padding: 1em;
+  background-color: black;
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  border: 0.1em solid aqua;
+  padding: 0.3em 0.5em;
+  border-radius: 0.5em;
+}
+.header__title-text {
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.header__item {
+  width: fit-content;
+  padding: 0.2em 0.5em;
+  border: none;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  font-size: 1.3em;
+  border-radius: 0.5em;
+  transition: background-color 200ms ease-out 100ms;
+}
+.header__item:hover {
+  background-color: rgba(0, 255, 255, 0.14);
+  border-radius: 0.5em;
+  color: aqua;
+}
+
+.card {
+  background-color: #353535;
+  border-top: 0.1em solid aqua;
+  margin: auto;
+  padding: 1em 0;
+}
+.card__container {
+  box-shadow: 0.1em 0.1em 1em rgba(0, 255, 255, 0.22);
+  border-radius: 1em;
+  margin: 3em auto;
+  border: 0.1em solid aqua;
+  background-color: #3d4141;
+}
+.card__title {
+  display: flex;
+  flex-wrap: wrap;
+  color: aqua;
+  justify-content: center;
+  font-size: 2em;
+  margin: 0.5em 0;
+  text-shadow: 0.3em 0.3em rgba(0, 121, 121, 0.15);
+  font-weight: bold;
+}
+.card__detail {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto auto;
+  padding: 1em;
+  width: 95%;
+}
+.card__input-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.card__label {
+  width: 85%;
+}
+.card__input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 94%;
+  padding: 0.3em 0.7em;
+  border-radius: 0.5em;
+  border: 0.1em solid aqua;
+  font-size: 1.2em;
+  background-color: #353535;
+  color: aqua;
+}
+.card__input:focus {
+  background-color: #272727;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.3em 0.7em;
+  outline: none;
+  border: 0.1em solid aqua;
+}
+.card__submit {
+  background-color: #353535;
+  color: aqua;
+  border: 0.1em solid aqua;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  transition: background-color 200ms ease-out 100ms;
+}
+.card__submit:hover {
+  background-color: aqua;
+  color: #353535;
+  border: 0.1em solid aqua;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+}
+.card__submit:active {
+  background-color: #353535;
+  color: aqua;
+  border: 0.1em solid aqua;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+}
+.card__cancel {
+  display: none;
+  background-color: gray;
+  color: aqua;
+  border: 0.1em solid aqua;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+}
+.card__cancel:hover {
+  background-color: aqua;
+  color: #353535;
+  border: 0.1em solid aqua;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+}
+.card__cancel:active {
+  background-color: gray;
+  color: aqua;
+  border: 0.1em solid aqua;
+  padding: 0.3em 0.7em;
+  cursor: pointer;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+}
+.card__list-container {
+  padding: 1em;
+  width: 95%;
+}
+.card__items {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-bottom: 0.1em solid white;
+  padding: 1em 0;
+}
+.card__item-text {
+  color: #a0ffff;
+}
+.card__icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 15%;
+}
+.card__edit {
+  cursor: pointer;
+  color: white;
+  border: 0.1em solid aqua;
+  border-radius: 0.5em;
+  padding: 0.1em;
+}
+.card__edit:hover {
+  border: 0.1em solid #3d4141;
+  color: aqua;
+}
+.card__done {
+  cursor: pointer;
+  color: white;
+  border: 0.1em solid aqua;
+  border-radius: 0.5em;
+  padding: 0.1em;
+}
+.card__done:hover {
+  border: 0.1em solid #3d4141;
+  color: aqua;
+}
+.card__delete {
+  cursor: pointer;
+  color: white;
+  border: 0.1em solid aqua;
+  border-radius: 0.5em;
+  padding: 0.1em;
+}
+.card__delete:hover {
+  border: 0.1em solid #3d4141;
+  color: aqua;
+}
+.card__clear-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2em;
+}
+.card__clear {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.3em 1.5em;
+  font-size: 1em;
+  background-color: #353535;
+  color: aqua;
+  border: 0.1em solid aqua;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 200ms ease-out 100ms;
+}
+.card__clear:hover {
+  background-color: aqua;
+  color: #353535;
+  border: 0.1em solid aqua;
+}
+.card__clear:active {
+  background-color: #353535;
+  color: aqua;
+  border: 0.1em solid aqua;
+  border-radius: 0.5em;
+}
+
+/*# sourceMappingURL=styles.css.map */

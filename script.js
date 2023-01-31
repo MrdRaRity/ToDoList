@@ -1,0 +1,7 @@
+const card = document.getElementsByClassName('card__detail')
+const alert = document.getElementsByClassName('card__alert')
+const input = document.getElementsByClassName('card__input')
+const submit = document.getElementsByClassName('card__submit')
+const list = document.getElementsByClassName('card__list')
+const clear = document.getElementsByClassName('card__clear')
+const cancel = document.getElementsByClassName('card__cancel')
